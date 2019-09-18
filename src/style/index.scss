@@ -1,0 +1,143 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5vw;
+  color: #1c1d1f;
+}
+
+.social {
+  width: 30px;
+  height: 100px;
+  position: fixed;
+  padding: 10px;
+  top: 50%;
+  left: 20px;
+  border-radius: 30px;
+  background: #4B79A1;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.social img{
+  width: 30px;
+  height: 30px;
+}
+.background--img1 {
+  background-image: url("../images/pixel-art-me.png");
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #1c1d1f;
+  min-height: 100vh;
+}
+.technologies {
+  width: 150px;
+  height: 150px;
+}
+.closeimg{
+  width: 20%;
+  height: 20%;
+  margin: 10%;
+}
+.background--gradient {
+  text-align: center;
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.textbox {
+  padding:50px 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  background-color:white;
+}
+.textbox p {
+  padding: 20px;
+}
+.brands{
+  background-color:white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #00CED1;
+}
+.cont{
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  font-size: 3vw;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+.cont span {
+  color: white;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0;
+}
+
+.column img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .textbox {
+    display: block;
+    padding: 50px 30px 50px 90px;
+  }
+  .background--img1 {
+    background-attachment: unset;
+    background-size: 60%;
+  }
+  body, html {
+    font-size: 4vw;
+  }
+  .technologies {
+    width: 20%;
+  }
+  .brands img{
+    width: 100px;
+    height: 100px;
+  }
+  .cont{
+    letter-spacing: .10em;
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
